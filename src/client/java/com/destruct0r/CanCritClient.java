@@ -41,9 +41,9 @@ public class CanCritClient implements ClientModInitializer {
 
 		if (bl3) {
 			if (bl) {
-				if (Objects.requireNonNull(mc.crosshairTarget).getType() == HitResult.Type.ENTITY && bl) {
+				if (Objects.requireNonNull(mc.crosshairTarget).getType() == HitResult.Type.ENTITY) {
 					context.drawItem(Items.NETHERITE_SWORD.asItem().getDefaultStack(), (context.getScaledWindowWidth() - 15) / 2, (context.getScaledWindowHeight() + 18) / 2, 15);
-				} else if (bl) {
+				} else {
 					context.drawItem(Items.DIAMOND_SWORD.asItem().getDefaultStack(), (context.getScaledWindowWidth() - 15) / 2, (context.getScaledWindowHeight() + 18) / 2, 15);
 				}
 			} else {
