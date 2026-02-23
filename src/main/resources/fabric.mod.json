@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "cancrit",
+	"version": "${version}",
+	"name": "canCrit",
+	"description": "Highlights when you can crit.",
+	"authors": [
+		"destruct0r"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/cancrit/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"com.destruct0r.CanCritClient"
+		]
+	},
+	"mixins": [
+		"cancrit.mixins.json",
+		{
+			"config": "cancrit.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
